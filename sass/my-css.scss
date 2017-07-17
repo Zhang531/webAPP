@@ -1,0 +1,761 @@
+@charset "UTF-8";
+body{
+    font-family: "微软雅黑";
+}
+$ppr: 750px/16/1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+botton {
+    border: none;
+    outline: none;
+}
+.views {
+    overflow: visible !important;
+}
+.box {
+    width: 100%;
+    background: #fff;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+p {
+    font-size: 24px/$ppr;
+    margin: 0.5em 0;
+}
+.clear:after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clear {
+    *zoom: 1;
+}
+.border_r {
+    border-right: 1px/$ppr solid #D8D8D8;
+}
+.border_t {
+    border-top: 1px/$ppr solid #D8D8D8;
+}
+.app {
+    height: 100%;
+    background: #ececec;
+    color: #666;
+}
+.page {
+    .page-content {
+        padding-top: 88px/$ppr;
+    }
+    padding-bottom: 98px/$ppr;
+}
+#left-box {
+    background: rgba(255,255,255,.9);
+    width: 70%;
+    font-size: 24px/$ppr;
+    line-height: 60px/$ppr;
+    .sousuo {
+        position: relative;
+        margin: 20px/$ppr;
+        input {
+            width: 100%;
+            border: 2px/$ppr solid #F8285C;
+            border-radius: 10px/$ppr;
+            height: 60px/$ppr;
+            font-size: 24px/$ppr;
+            line-height: 60px/$ppr;
+            text-indent: 1em;
+        }
+        button {
+            width: 30px/$ppr;
+            height: 30px/$ppr;
+            background: url("../images/search.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 30px/$ppr;
+            top: 15px/$ppr;
+            border: none;
+            outline: none;
+        }
+    }
+    ul {
+        list-style: none;
+        margin-left: 20px/$ppr;
+        li {
+            text-align: center;
+            width: 80%;
+            border-bottom: 1px/$ppr solid #ddd;
+        }
+        li.active {
+            background: #eee;
+            border-left: 5px/$ppr solid #F8285C;
+            color: #F8285C;
+        }
+    }
+}
+.navbar {
+    height: 88px/$ppr;
+    background: #F8285C;
+    color: #fff;
+    .open-panel_l {
+        height: 44px/$ppr;
+        width: 10%;
+        a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            background: url("../images/btn-mobile.png") no-repeat;
+            background-position: 12px/$ppr -300px/$ppr;
+            background-size: cover;
+        }
+    }
+    .title {
+        width: 80%;
+        background: #F8285C;
+        p {
+            margin: 0 auto;
+            font-size: 32px/$ppr;
+            color: #fff;
+            text-align: center;
+        }
+        .search_a {
+            display: none;
+            p {
+                //              display: none;
+                margin: 0 auto;
+            }
+            margin: 0 auto;
+            background: #fff;
+            height: 44px/$ppr;
+            width: 80%;
+            border: none;
+            border-radius: 10px/$ppr;
+            font-size: 24px/$ppr;
+            text-indent: 1em;
+        }
+    }
+    .user {
+        height: 44px/$ppr;
+        width: 10%;
+        a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: 28px/$ppr;
+            background: url("../images/btn-mobile.png") no-repeat;
+            background-position: 12px/$ppr -91px/$ppr;
+            background-size: cover;
+            color: #fff;
+            line-height: 44px/$ppr;
+        }
+    }
+}
+#login_v{
+     .open-panel_l {
+        a {
+            background: url("../images/btn-mobile.png") no-repeat;
+            background-position: 12px/$ppr -186px/$ppr;
+            background-size: cover;
+        }
+    }
+}
+//search
+#search {
+    .open-panel_l {
+        a {
+            background: url("../images/btn-mobile.png") no-repeat;
+            background-position: 12px/$ppr -186px/$ppr;
+            background-size: cover;
+        }
+    }
+    form {
+        background: #F8285C;
+        height: 44px/$ppr;
+        border: none;
+        .searchbar-input {
+            height: 44px/$ppr;
+            input {
+                font-size: 28px/$ppr;
+                text-indent: 1em;
+            }
+        }
+        a.searchbar-cancel {
+            font-size: 28px/$ppr;
+            color: #fff;
+        }
+    }
+    .content-block-inner {
+        font-size: 24px/$ppr;
+        height: 44px/$ppr;
+    }
+    ul {
+        height: 300px/$ppr;
+        .item-content {
+            height: 60px/$ppr;
+            line-height: 60px/$ppr;
+            .item-inner {
+                .item-title {
+                    font-size: 24px/$ppr;
+                }
+            }
+        }
+    }
+}
+
+#right-box {
+    margin-top: 88px/$ppr;
+    width: 430px/$ppr;
+    height: 390px/$ppr;
+    background: rgba(255,255,255,.9);
+    #qiandao{
+        margin: 10px/$ppr 150px/$ppr 0;
+        width: 100px/$ppr;
+        height: 44px/$ppr;
+        background: #f58;
+        border-radius: 15px/$ppr;
+        color: #fff;
+        font-size: 22px/$ppr;
+    }
+    #calendar {
+        margin: 0 15px/$ppr;
+        .singer_r_img {
+            display: block;
+            width: 114px/$ppr;
+            height: 52px/$ppr;
+            line-height: 45px/$ppr;
+            background: url("images/sing_week.gif") right 2px/$ppr no-repeat;
+            vertical-align: middle;
+            *margin-bottom: -10px/$ppr;
+            text-decoration: none;
+        }
+        .singer_r_img:hover {
+            background-position: right -53px/$ppr;
+            text-decoration: none;
+        }
+        .singer_r_img span {
+            margin-left: 14px/$ppr;
+            font-size: 20px/$ppr;
+            font-family: 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif !important;
+            font-weight: 700;
+            color: #165379;
+        }
+        .singer_r_img.current {
+            background: url("images/sing_sing.gif") no-repeat 0 2px/$ppr;
+            border: 0;
+            text-decoration: none;
+        }
+        .sign table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+        .sign th,
+        .sign td {
+            width: 30px/$ppr;
+            height: 40px/$ppr;
+            text-align: center;
+            line-height: 40px/$ppr;
+            border: 1px/$ppr solid #e3e3e3;
+        }
+        .sign th {
+            font-size: 20px/$ppr;
+        }
+        .sign td {
+            color: #404040;
+            vertical-align: middle;
+        }
+        .sign .on {
+            background:url(../images/timg.jpg) no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+        .calendar_month_next,
+        .calendar_month_prev {
+            width: 34px/$ppr;
+            height: 40px/$ppr;
+            cursor: pointer;
+            background: url("images/sign_arrow.png") no-repeat;
+        }
+        .calendar_month_next {
+            float: right;
+            background-position: -42px/$ppr -6px/$ppr;
+        }
+        .calendar_month_span {
+            display: inline;
+            line-height: 40px/$ppr;
+            font-size: 18px/$ppr;
+            color: #656565;
+            letter-spacing: 2px/$ppr;
+            font-weight: bold;
+        }
+        .calendar_month_prev {
+            float: left;
+            background-position: -5px/$ppr -6px/$ppr;
+        }
+        .sign_succ_calendar_title {
+            text-align: center;
+            width: 398px/$ppr;
+            border-left: 1px/$ppr solid #e3e3e3;
+            border-right: 1px/$ppr solid #e3e3e3;
+            background: #fff;
+        }
+        .sign_main {
+            width: 400px/$ppr;
+            border-top: 1px/$ppr solid #e3e3e3;
+            font-family: "Microsoft YaHei", SimHei;
+        }
+    }
+}
+//detail
+#detail {
+    .open-panel_l {
+        a {
+            background: url("../images/btn-mobile.png") no-repeat;
+            background-position: 12px/$ppr -186px/$ppr;
+            background-size: cover;
+        }
+    }
+    .page-content {
+        text-align: center;
+        .price {
+            padding: 15px/$ppr 0;
+            background: #fff;
+            color: #f8285c;
+            font-size: 36px/$ppr;
+            line-height: 50px/$ppr;
+            span {
+                font-size: 24px/$ppr;
+                line-height: 54px/$ppr;
+                color: #666;
+                text-decoration: line-through;
+            }
+        }
+        .title {
+            padding: 0 0 10px/$ppr;
+            background: #fff;
+            font-size: 32px/$ppr;
+        }
+        .juan {
+            font-size: 32px/$ppr;
+            margin: 15px/$ppr 0;
+            height: 50px/$ppr;
+            line-height: 50px/$ppr;
+            color: #fff;
+            background: #f8285c;
+        }
+    }
+    .bottom_b {
+        margin: auto;
+        width: 560px/$ppr;
+        border: 1.5px/$ppr solid #666;
+        border-radius: 10px/$ppr;
+        height: 64px/$ppr;
+        overflow: hidden;
+        position: relative;
+        div {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            line-height: 64px/$ppr;
+            text-align: center;
+        }
+        ._l {
+            top: 0;
+            left: 0;
+            background: #f8285c;
+            font-size: 32px/$ppr;
+            color: #fff;
+        }
+        ._r {
+            top: 0;
+            right: 0;
+            font-size: 24px/$ppr;
+            color: #666;
+        }
+        p {
+            width: 28px/$ppr;
+            height: 28px/$ppr;
+            border-radius: 50%;
+            background: #fff;
+            left: 266px/$ppr;
+            top: 16px/$ppr;
+            margin: 0;
+            position: absolute;
+        }
+    }
+}
+//personal
+#personal {
+    .top {
+        height: 150px/$ppr;
+        background: #fff;
+        margin: 20px/$ppr 0;
+        img {
+            margin: 15px/$ppr;
+            width: 120px/$ppr;
+            border-radius: 50%;
+        }
+        span {
+            line-height: 150px/$ppr;
+            font-size: 28px/$ppr;
+            margin-left: 30px/$ppr;
+        }
+    }
+    ul {
+        background: #fff;
+        margin: 20px/$ppr 0;
+        li {
+            list-style: none;
+            padding: 0 15px/$ppr;
+            height: 100px/$ppr;
+            div {
+                background: url('../images/user-icon.png') no-repeat;
+                background-size: cover;
+                float: left;
+                margin: 19px/$ppr 0;
+                width: 62px/$ppr;
+                height: 62px/$ppr;
+            }
+            .a {
+                background-size: cover;
+                background-position: 50% -62px/$ppr;
+            }
+            .b {
+                background-size: cover;
+                background-position: 50% -126px/$ppr;
+            }
+            .c {
+                background-size: cover;
+                background-position: 50% -192px/$ppr;
+            }
+            .d {
+                background-size: cover;
+                background-position: 50% 0px/$ppr;
+            }
+            .e {
+                background-position: 50% -254px/$ppr;
+            }
+            span {
+                line-height: 100px/$ppr;
+                font-size: 24px/$ppr;
+                margin-left: 30px/$ppr;
+            }
+        }
+    }
+}
+div.tentran ul {
+    overflow: hidden;
+    width: 96%;
+    margin: 0 auto;
+    list-style: none;
+    li {
+        float: left;
+        width: 25%;
+        margin: 8px/$ppr 0;
+        div {
+            height: 80px/$ppr;
+        }
+        @each $a in a,
+        b,
+        c,
+        d,
+        e,
+        f,
+        g,
+        h,
+        i,
+        j {
+            ##{$a} {
+                background: url("../images/#{$a}.png") no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+.benefit {
+    margin: 10px/$ppr 0 0;
+    padding: 8px/$ppr;
+    height: 320px/$ppr;
+    background: #fff;
+    h1 {
+        font-size: 36px/$ppr;
+        margin-left: 16px/$ppr;
+    }
+    p {
+        width: 40%;
+        margin-left: 16px/$ppr;
+    }
+    img {
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+    }
+    ._l {
+        h1 {
+            color: #f58;
+        }
+        p {
+            width: 100%;
+        }
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 40%;
+        img {
+            width: 80%;
+        }
+    }
+    ._c,
+    ._r {
+        float: left;
+        height: 100%;
+        width: 30%;
+        img {
+            width: 50%;
+            float: right;
+        }
+        .__t,
+        .__b {
+            height: 50%;
+            position: relative;
+        }
+    }
+}
+.hot_fout {
+    padding: 8px/$ppr;
+    height: 240px/$ppr;
+    background: #fff;
+    h1,
+    p {
+        width: 60%;
+        margin-left: 40%;
+    }
+    h1 {
+        font-size: 32px/$ppr;
+        margin-top: 16px/$ppr;
+    }
+    img {
+        width: 25%;
+        display: inline-block;
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+    }
+    ._l,
+    ._r {
+        width: 50%;
+        float: left;
+    }
+    .__t,
+    .__b {
+        height: 50%;
+        position: relative;
+    }
+}
+.product {
+    width: 100%;
+    li {
+        list-style: none;
+        width: 48.5%;
+        margin-top: 7.5px/$ppr;
+        margin-left: 1%;
+        float: left;
+        background: #fff;
+        img {
+            width: 100%;
+        }
+        .name {
+            text-align: center;
+            line-height: 30px/$ppr;
+            font-size: 24px/$ppr;
+        }
+        .price {
+            text-indent: 0.5em;
+            color: #f8285c;
+            font-size: 36px/$ppr;
+            line-height: 50px/$ppr;
+            span {
+                font-size: 24px/$ppr;
+                line-height: 54px/$ppr;
+                color: #666;
+                text-decoration: line-through;
+            }
+            p {
+                float: right;
+                margin: 0 10px/$ppr 0 0;
+            }
+        }
+    }
+}
+.discount_center {
+    width: 100%;
+    li {
+        width: 97%;
+        margin-top: 10px/$ppr;
+        margin-left: 1.5%;
+        background: #fff;
+        .title {
+            img {
+                width: 120px/$ppr;
+                margin: 10px/$ppr 0 0 2%;
+            }
+            span {
+                line-height: 75px/$ppr;
+                padding-left: 2%;
+                font-size: 24px/$ppr;
+            }
+        }
+        ul {
+            position: relative;
+            li {
+                list-style: none;
+                width: 47%;
+                margin-top: 15px/$ppr;
+                margin-left: 2%;
+                float: left;
+                position: relative;
+                img {
+                    padding-bottom: 30px/$ppr;
+                }
+                .price {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: 30px/$ppr;
+                    background: rgba(255,255,255,.8);
+                    text-indent: 2em;
+                    color: #f8285c;
+                    font-size: 36px/$ppr;
+                    line-height: 50px/$ppr;
+                    span {
+                        font-size: 24px/$ppr;
+                        line-height: 54px/$ppr;
+                        color: #666;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .active_k {
+                position: absolute;
+                background: rgba(255,255,255,.8);
+                border-radius: 40px/$ppr;
+                text-align: center;
+                left: 35%;
+                top: 100px/$ppr;
+                height: 80px/$ppr;
+                width: 30%;
+                color: #f8285c;
+                font-size: 32px/$ppr;
+                padding: 10px/$ppr 0;
+                p {
+                    color: #666;
+                    margin: 0;
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+}
+//login
+.login {
+    background: #fff;
+    h1 {
+        text-align: center;
+        font-size: 36px/$ppr;
+        line-height: 60px/$ppr;
+        padding: 60px/$ppr;
+    }
+    .inp {
+        margin-top: 40px/$ppr;
+        width: 80%;
+        margin: 0 auto;
+        img {
+            width: 44px/$ppr;
+        }
+        #y_name,
+        #y_password {
+            width: 90%;
+            height: 44px/$ppr;
+            font-size: 24px/$ppr;
+        }
+        #login {
+            width: 100%;
+            margin: 20px/$ppr 0;
+            height: 44px/$ppr;
+            border-radius: 8px/$ppr;
+            background: #F8285C;
+            color: #fff;
+            font-size: 28px/$ppr;
+            line-height: 44px/$ppr;
+        }
+        p {
+            height: 30px/$ppr;
+            text-align: left;
+            text-indent: 2em;
+        }
+    }
+}
+// bottom
+.app_bottom_bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    color: #666;
+    height: 98px/$ppr;
+    a {
+        width: 20%;
+        height: 100%;
+        border-right: 1px/$ppr solid #D8D8D8;
+    }
+    a.active {
+        color: #E63B53;
+    }
+    p.icon {
+        width: 60px/$ppr;
+        height: 60px/$ppr;
+        margin: 0 auto;
+    }
+    p.tabbar-label {
+        text-align: center;
+        font-size: 24px/$ppr;
+        margin: 0;
+    }
+    @each $b in bottombtn1,
+    bottombtn2,
+    bottombtn3,
+    bottombtn4,
+    bottombtn5 {
+        ##{$b} {
+            background: url("../images/#{$b}.png") no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+        .active ##{$b} {
+            background: url("../images/#{$b}_2.png") no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+    }
+}

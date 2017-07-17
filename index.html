@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- IOS Android 状态栏栏主题 -->
+		<meta name="theme-color" content="#2196f3">
+		<!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<title>逛精品</title>
+		<!-- Framework7 框架主题CSS -->
+		<link rel="stylesheet" href="css/framework7.ios.css" type="text/css">
+		<link rel="stylesheet" href="css/framework7.ios.colors.css" type="text/css">
+		<!--适配rem插件-->
+		<script src="js/mobile-util.js"></script>
+		<!-- 个人项目CSS-->
+		<link rel="stylesheet" href="css/my-css.css" type="text/css">
+
+	</head>
+
+	<body>
+		<div class="panel-overlay"></div>
+
+		<!-- Left Panel with Reveal effect -->
+		<div class="panel panel-left panel-cover" id="left-box">
+			<div class="sousuo">
+				<a href="search.html"><input type="search" name="" id="" value="" placeholder="搜索商品" /></a>
+				<button></button>
+			</div>
+			
+			<ul>
+				<li class="active">首页</li>
+				<li>品牌折扣</li>
+				<li>9.9包邮</li>
+				<li>19.9包邮</li>
+				<li>积分商城</li>
+			</ul>
+	    </div>
+			
+<!--以上是左边侧栏-->
+<div class="panel panel-right panel-cover" id="right-box">
+    
+      <div id="calendar"></div>
+    
+  </div>
+		<div class="app swiper-container">
+
+			<div class="views swiper-wrapper">
+<!--下面是首页-->
+				<div class="view swiper-slide view-main" id="home">
+					<div class="pages">
+						<div class="page" data-page="home">
+							<div class="navbar" >
+								<div class="navbar-inner">
+									<!-- 导航栏-->
+									<div class="open-panel_l">
+										<a href="#" data-panel="left" class="open-panel">
+										</a>
+									</div>
+									<div class=" title search_t">
+        								<p class="search_p">逛精品 - 时尚精品网站</p>
+										<div class="search_a"><a href="search.html" ><p style="color: #666;">请输入搜索内容</p></a></div>
+									</div>
+									
+									<div class="user">
+											<a href="#"  class="sign"></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-content">
+								<div class="swiper-container swiper-1">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="images/banner0.jpg" width="100%" /></div>
+										<div class="swiper-slide"><img src="images/banner1.jpg" width="100%" /></div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+
+								<div class="tentran box">
+									<ul>
+										<li>
+											<div id="a"></div>
+											<p>居家</p>
+										</li>
+										<li>
+											<div id="b"></div>
+											<p>女装</p>
+										</li>
+										<li>
+											<div id="c"></div>
+											<p>内衣</p>
+										</li>
+										<li>
+											<div id="d"></div>
+											<p>鞋子</p>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<div id="e"></div>
+											<p>母婴</p>
+										</li>
+										<li>
+											<div id="f"></div>
+											<p>男装</p>
+										</li>
+										<li>
+											<div id="g"></div>
+											<p>美妆</p>
+										</li>
+										<li>
+											<div id="h"></div>
+											<p>美食</p>
+										</li>
+									</ul>
+								</div>
+								<div class="benefit">
+
+									<div class="_l border_r">
+										<h1>今日更新</h1>
+										<p>每天10:00更新</p>
+										<img class="lazy lazy-fadIn" data-src="images/todynew.png" width="100%" />
+									</div>
+
+									<div class="_c border_r">
+										<div class="__t">
+											<h1>精美预告</h1>
+											<p>好货早收藏</p>
+											<img class="lazy lazy-fadIn" data-src="images/55ee257497dd5.png" width="100%" />
+										</div>
+										<div class="__b border_t">
+											<h1>美丽说精</h1>
+											<p>女人的购物天堂</p>
+											<img class="lazy lazy-fadIn" data-src="images/55ee25e227b08.png" width="100%" />
+										</div>
+									</div>
+
+									<div class="_r">
+										<div class="__t">
+											<h1>内部卷</h1>
+											<p>全网精品总汇</p>
+											<img class="lazy lazy-fadIn" data-src="images/55ee25ad427f5.png" width="100%" />
+										</div>
+										<div class="__b border_t">
+											<h1>天猫优选</h1>
+											<p>正品低价</p>
+											<img class="lazy lazy-fadIn" data-src="images/55ee26066f7d4.png" width="100%" />
+										</div>
+									</div>
+								</div>
+								<div class="hot_fout">
+									<div class="_l border_r  border_t">
+										<div class="__t">
+											<img class="lazy lazy-fadIn" data-src="images/icon_tit6.jpg" width="100%" />
+											<h1>品牌团</h1>
+											<p>大品牌大折扣</p>
+										</div>
+										<div class="__b  border_t">
+											<img class="lazy lazy-fadIn" data-src="images/icon_tit7.jpg" width="100%" />
+											<h1>天猫优选</h1>
+											<p>滋润心灵的汤药</p>
+										</div>
+									</div>
+									<div class="_r  border_t">
+										<div class="__t">
+											<img class="lazy lazy-fadIn" data-src="images/icon_tit8.png" width="100%" />
+											<h1>天猫精选</h1>
+											<p>总有你想要的</p>
+										</div>
+										<div class="__b  border_t">
+											<img class="lazy lazy-fadIn" data-src="images/icon_tit9.png" width="100%" />
+											<h1>时尚搭配</h1>
+											<p>把钱花到刀刃上</p>
+										</div>
+									</div>
+
+								</div>
+								<ul class="product clear">
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--下面是品牌折扣-->				
+			<div class="view swiper-slide" id="discount">
+					<div class="pages">
+						<div class="page" data-page="discount">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<!-- 导航栏-->
+									<div class="open-panel_l">
+										<a href="#" data-panel="left" class="open-panel">
+										</a>
+									</div>
+									<div class=" title search_t">
+        								<p class="search_p">品牌折扣</p>
+										<div class="search_a"><a href="search.html" ><p style="color: #666;">请输入搜索内容</p></a></div>
+									</div>
+									<div class="user">
+										<a href="#"  class="sign"></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-content">
+								<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title0.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro0.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro1.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>
+								<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title1.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro2.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro3.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>			<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title0.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro0.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro1.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>
+								<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title1.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro2.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro3.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>			<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title0.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro0.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro1.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>
+								<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title1.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro2.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro3.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>			<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title0.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro0.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro1.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+									
+								</ul>
+								<ul class="discount_center">
+									<a href="detail.html">
+										<li>
+										<div class="title"><img class="lazy lazy-fadIn" data-src="images/title1.png" />
+											<span>
+											真皮皮衣直销
+										</span>
+										</div>
+										<ul class="clear">
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro2.jpg" width="100%" />
+												<div class="price">￥699.0<span>￥3380.0</span>
+												</div>
+											</li>
+											<li>
+												<img class="lazy lazy-fadIn" data-src="images/pro3.jpg" width="100%" />
+												<div class="price">￥499.0<span>￥1280.0</span>
+												</div>
+											</li>
+											<div class="active_k">去看看
+												<p>共108款</p>
+											</div>
+										</ul>
+									</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--下面是9.9包邮-->
+			<div class="view swiper-slide" id="each">
+					<div class="pages">
+						<div class="page" data-page="each">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<!-- 导航栏-->
+									<div class="open-panel_l">
+										<a href="#" data-panel="left" class="open-panel">
+										</a>
+									</div>
+									<div class=" title search_t">
+        								<p class="search_p">9.9包邮</p>
+										<div class="search_a"><a href="search.html" ><p style="color: #666;">请输入搜索内容</p></a></div>
+									</div>
+									<div class="user">
+										<a href="#"  class="sign"></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-content">
+
+								<ul class="product clear">
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--下面是19.9包邮-->
+			<div class="view swiper-slide" id="each2">
+					<div class="pages">
+						<div class="page" data-page="each2">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<!-- 导航栏-->
+									<div class="open-panel_l">
+										<a href="#" data-panel="left" class="open-panel">
+										</a>
+									</div>
+									<div class=" title search_t">
+        								<p class="search_p">19.9包邮</p>
+										<div class="search_a"><a href="search.html" ><p style="color: #666;">请输入搜索内容</p></a></div>
+									</div>
+									<div class="user">
+										<a href="#"  class="sign"></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-content">
+
+								<ul class="product clear">
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product0.jpg" width="100%" />
+										<div class="name">冬季情侣棉拖鞋冬男女 </div>
+										<div class="price">￥18.0<span>￥22.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product1.jpg" width="100%" />
+										<div class="name">秋冬新款女套头中长款</div>
+										<div class="price">￥888.0<span>￥1998.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product2.jpg" width="100%" />
+										<div class="name">席梦思无敌暖和加长版</div>
+										<div class="price">￥398.0<span>￥498.0</span>
+											<p>淘宝</p>
+										</div>
+									</li>
+									</a>
+									<a href="detail.html">
+										<li><img class="lazy lazy-fadIn" data-src="images/product3.jpg" width="100%" />
+										<div class="name">贴心胸罩晾衣架超级精制品</div>
+										<div class="price">￥15.0<span>￥36.0</span>
+											<p>天猫</p>
+										</div>
+									</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--下面是个人中心-->
+				<div class="view swiper-slide" id="my">
+					<div class="pages">
+						<div class="page" data-page="my">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<!-- 导航栏-->
+									<div class="open-panel_l">
+										<a href="#" data-panel="left" class="open-panel">
+										</a>
+									</div>
+									<div class="title"><p>个人中心</p></div>
+									<div class="user">
+										<a href="#" class="" style="background: none; ">
+											注册
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="page-content">
+								<div class="login">
+									<h1>会员账号登录</h1>
+									<div class="inp">
+										<img src="images/person.png" width="100%" />
+										<input type="text" name="" id="y_name" value="" placeholder="请输入用户名"  />
+										<p id="y_name_v"></p>
+										<div class="border_t" style="width: 100%; height: 2px; margin: 30px 0;"></div>
+										<img src="images/pass.png" width="100%" />
+										<input type="password" name="" id="y_password" value="" placeholder="请输入密码" />
+										<p id="y_password_v"></p>
+										<input type="button" id="login" value="登录" />
+									</div>
+									<p style="text-align: right; width: 80%; margin: 0 auto;">
+										<a href="###">忘了密码?</a>
+									</p>
+									<h1>第三方账号快速登录</h1>
+									<p><img src="images/wap_sina.png" width="100px" style="margin: 0 auto; display:block;" />
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+<!--底部导航栏-->
+			<div class="toolbar toolbar-bottom app_bottom_bar">
+				<div class="toolbar-inner views-pagination">
+					<a href="###" class="tab-link active">
+						<p class="icon" id="bottombtn1"></p>
+						<p class="tabbar-label">首页</p>
+					</a>
+					<a href="###" class="tab-link">
+						<p class="icon" id="bottombtn2"></p>
+						<p class="tabbar-label">品牌折扣</p>
+					</a>
+					<a href="###" class="tab-link">
+						<p class="icon" id="bottombtn3"></p>
+						<p class="tabbar-label">9.9包邮</p>
+					</a>
+					<a href="###" class="tab-link">
+						<p class="icon" id="bottombtn4"></p>
+						<p class="tabbar-label">19.9包邮</p>
+					</a>
+					<a href="###" class="tab-link" style="border:none;">
+						<p class="icon" id="bottombtn5"></p>
+						<p class="tabbar-label">个人中心</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- Framework7 JS库-->
+		<script type="text/javascript" src="js/framework7.js"></script>
+		<!-- app.js-->
+		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="js/my-app.js"></script>
+	</body>
+</html>
